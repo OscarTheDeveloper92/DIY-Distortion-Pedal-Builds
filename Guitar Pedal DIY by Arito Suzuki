@@ -1,0 +1,21 @@
+In this simple build we cover the basics of breadboarding and how the columns and rows of the breadboard allow us to connect our electronic components. We first start of by introducing the positive and negative wires
+of a battery snap and plug that into the breadboard. Usually, blue is negative(ground) and red is positive.
+
+Power Supply
+Reference Voltage (splits the source voltage in two): The components needed for the reference voltage are 2 10K resistors, and 2 47 micro fared caps. 
+
+Op-Amp (operational amplifier): I'm using the TL072CCP Dual opamp. The highlight of this opamp is that it is low-noise and has a high slew rate (rate at which the amp can change its output voltage).
+
+Input: The input signal travels through a 0.01 micro fared cap into the non-inverting input of the opamp, followed by a 1 Mohm resistor into reference voltage.
+
+Output: The output signal then travels through a 100 pico fared cap out of the inverting input of the opamp, then a 5.6k resisitor into the inverting input of the opamp, then a 0.047 micro fared cap in parallel with 
+the 5.6k resistor and plugged into reference voltage. Followed by a 500K potentiometer plugged into both the output and inverting inputs of the opamp. Then I propped a 25k trim pot onto the bread board knowing that it is 
+a naturally bright (high tone frequency) component onto the breadboard with intents of only using the middle and right leads of the pot. The middle lead was connected to the output of the opamp, leaving us with connecting 
+a 0.01 micro fared cap to the right lead of the 25k trim pot. I then connected the right end of this trim pot to the non-inverting input of the second opamp (there's 2 opamps in one). I then connected a 24k resistor to
+the inverting input and output of the opamp. At this point I'm just inputting components in a chronological order along with the video. So after the previous step I add a 10k resistor to the inverting input of the second opamp
+and into reference voltage. Input a .47 microfared cap into the output of the second opamp and into an arbitrary spot on the breadboard that will be our output source. Following the previous step I alligned the right lead 
+of a 100k trim pot with the .47 micro fared cap with the left lead plugged into ground. Finalizing the circuit I connected my input and output jacks. My output jack was connected to the middle lead of the 100k trim pot 
+and ground and my input jack was inputted paralled with the 0.01 microfared cap and ground.
+
+Diodes (What causes the signal to clip and distort): I'm going to go with 2 silicon diodes and 2 light emitting diodes (L.E.D's). I went with the asymmetrical approach and added the first 2 silicon diodes in a traditional sense
+where each of their polar ends were opposite and then I did the same configuration but with L.E.D's. 
