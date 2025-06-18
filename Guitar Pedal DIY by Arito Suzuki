@@ -19,3 +19,7 @@ and ground and my input jack was inputted paralled with the 0.01 microfared cap 
 
 Diodes (What causes the signal to clip and distort): I'm going to go with 2 silicon diodes and 2 light emitting diodes (L.E.D's). I went with the asymmetrical approach and added the first 2 silicon diodes in a traditional sense
 where each of their polar ends were opposite and then I did the same configuration but with L.E.D's. 
+
+Ideas to Modify The Pedal Circuit:
+Began to learn about RC filtering which is a mathematical formula comprised of the resistor and the capacitor values which allows you to figure out whether you are causing 
+a high or low pass filter in your signal. The RC filter formula is 1/2pi(R)(C).
